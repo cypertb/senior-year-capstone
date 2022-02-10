@@ -1,0 +1,170 @@
+.header {
+    overflow: hidden;
+    background-color: #faebd7;
+    padding: 20px 10px;
+  }
+  
+  h1 {
+     text-align: center;
+  }
+  
+  h2 {
+     text-align: center;
+  }
+  
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  table {
+    width: 100%;
+    background-color: #faebd7;
+    color: #490009;
+    font-weight: bold;
+  }
+  
+  table a {
+    color: #013766;
+  }
+  
+  th {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  tr {
+    text-align: center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #faf0e6;
+  }
+  
+  .container a {
+    color: #faebd7;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: #490009;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #013766;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #fdf5e6;
+    /*color: #ac0e28;*/
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: #010a1c;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  /* Style inputs, select elements and textareas */
+  input[type="text"], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  label[type="submit"] {
+    background-color: #490009;
+    color: #fdf5e6;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the submit */
+  input[type="submit"], button {
+    background-color: #fdf5e6;
+    color: #490009;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type="submit"]:hover, button:hover {
+    background-color: #CDB61B;
+  }
+  
+  /* Style the container */
+  .container {
+    color: #013766;
+    font-weight: bolder;
+    /*background-color: #bc4558;*/
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .column1 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .column2 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 600px) {
+    .column1, .column2, input[type="submit"], label[type="submit"], button {
+      width: 100%;
+      margin-top: 0;
+    }
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }

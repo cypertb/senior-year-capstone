@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>All the Wines</title>
+    <meta name="description" content="Web Application for Winery Mobile Application" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="/style.css?v=1.3"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    {{#each jsscripts}}
+        <script> src="/static/{{this}}"</script>
+    {{/each}}
+</head>
+<body>
+    <div class="header">
+        <a href='/home' class='logo'>All The Wines</a>
+        <div class="header-right">
+            <a href='/users'>Users</a>
+            <a href='/wineries'>Wineries</a>
+        </div>
+    </div>
+    <div class="container">
+        {{{body}}}
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<h1><u>Current Users</u></h1>
+<table class="center">
+    <thead>
+        <th><u>Name</u></th>
+    </thead>
+    <tbody>
+        {{#if users}}
+        {{#each users}}
+        <tr>
+            <td>{{this.name}}</td>
+        </tr>
+        {{/each}}
+        {{else}}
+            <tr>
+                <td><p>Currently no users registered.</p></td>
+            </tr>
+        {{/if}}
+    </tbody>
+</table>

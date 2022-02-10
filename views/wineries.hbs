@@ -1,0 +1,29 @@
+<h1><u>Current Wineries</u></h1>
+<table class="center">
+    <thead>
+        <th><u>Name</u></th>
+        <th><u>Email</u></th>
+        <th><u>Address</u></th>
+        <th><u>Wines</u></th>
+    </thead>
+    <tbody>
+        {{#if wineries}}
+        {{#each wineries}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.address}}</td>
+            {{#if this.wines}}
+            {{#each this.wines}}
+                <td>{{this.name}}</td>
+            {{/each}}
+            {{else}}
+                <td>No Wines Available</td>
+            {{/if}}
+        </tr>
+        {{/each}}
+        {{else}}
+            <p>Currently no wineries registered.</p>
+        {{/if}}
+    </tbody>
+</table>
